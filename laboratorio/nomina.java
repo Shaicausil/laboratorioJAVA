@@ -19,8 +19,8 @@ public class nomina {
 
             codNomina = Integer.parseInt(JOptionPane.showInputDialog(nomina));
 
-            if (codNomina == 5) {
-                JOptionPane.showMessageDialog(null, "Saliendo del programa...");
+            if (codNomina==5) {
+                JOptionPane.showMessageDialog(null, "Saliendo del programa");
                 break;
             }
 
@@ -43,8 +43,8 @@ public class nomina {
             }
 
             double salarioFinal = salario - descuento;
-            JOptionPane.showMessageDialog(null, "Su descuento para el ahorro es: $" + descuento +
-                    "\nUsted recibirá: $" + salarioFinal);
+            JOptionPane.showMessageDialog(null, "Su descuento para el ahorro es: $"+descuento+
+                    "\nUsted recibirá: $"+salarioFinal);
 
         } while (true);
     }
