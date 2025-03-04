@@ -50,7 +50,7 @@ public class practica {
                             case 3:
                                 break;
                             default:
-                                JOptionPane.showMessageDialog(null, "No corresponde a " + "un codigo valido", "ADVERTENCIA", JOptionPane.WARNING_MESSAGE);
+                                JOptionPane.showMessageDialog(null, "No corresponde a un codigo valido");
                                 break;
                         }
                         codMenuTipico = Integer.parseInt(JOptionPane.showInputDialog("Ingrese 1 si desea repetir " +
@@ -87,7 +87,7 @@ public class practica {
                             case 3:
                                 break;
                             default:
-                                JOptionPane.showMessageDialog(null, "No corresponde a " + "un codigo valido", "ADVERTENCIA", JOptionPane.WARNING_MESSAGE);
+                                JOptionPane.showMessageDialog(null, "No corresponde a un codigo valido");
                                 break;
                         }
                         codMenuCarta = Integer.parseInt(JOptionPane.showInputDialog("Ingrese 1 si desea repetir " +
@@ -127,11 +127,10 @@ public class practica {
                             case 3:
                                 break;
                             default:
-                                JOptionPane.showMessageDialog(null, "No corresponde a " + "un codigo valido", "ADVERTENCIA", JOptionPane.WARNING_MESSAGE);
+                                JOptionPane.showMessageDialog(null, "No corresponde a un codigo valido");
                                 break;
                         }
-                        codMenuInter = Integer.parseInt(JOptionPane.showInputDialog("Ingrese 1 si desea repetir " +
-                                "el menu internacional, de lo contrario regresara al menu principal"));
+                        codMenuInter = Integer.parseInt(JOptionPane.showInputDialog("Ingrese 1 si desea repetir el menu internacional, de lo contrario regresara al menu principal"));
                         if (codMenuInter != 1) {
                             codMenuInter = 3;
                         }
@@ -141,22 +140,21 @@ public class practica {
                     JOptionPane.showMessageDialog(null, "Salio del sistema");
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "No corresponde a un " + "codigo valido", "ADVERTENCIA", JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "No corresponde a un codigo valido");
                     break;
             }
         } while (codMenuPpal != 4);
 
 
-        String msj = "********** FACTURA **********\n";
+        String msj = "FACTURA\n";
         msj += "Cliente: " + Usuario + "\n";
         msj += "---------------------------------\n";
-        msj += "Platos solicitados: " + (int) contador + "\n";
-        msj += " - Platos Típicos: " + (int) contadorTipicos + "\n";
-        msj += " - Platos a la Carta: " + (int) contadorCarta + "\n";
-        msj += " - Platos Internacionales: " + (int) contadorInter + "\n";
+        msj += "Platos solicitados: " +contador + "\n";
+        msj += " - Platos Típicos: " +contadorTipicos + "\n";
+        msj += " - Platos a la Carta: " +contadorCarta + "\n";
+        msj += " - Platos Internacionales: " +contadorInter + "\n";
         msj += "---------------------------------\n";
-        msj += "Total a pagar: $" + (int) factura + "\n";
-        msj += "********************************";
+        msj += "Total a pagar: $" +factura + "\n";
 
         JOptionPane.showMessageDialog(null, msj, "Factura de Compra", JOptionPane.INFORMATION_MESSAGE);
 
