@@ -19,8 +19,8 @@ public class empleado {
             pago += "5. Salir";
 
             codPago = Integer.parseInt(JOptionPane.showInputDialog(pago));
-            if (codPago == 5) {
-                JOptionPane.showMessageDialog(null, "Saliendo del programa...");
+            if (codPago==5) {
+                JOptionPane.showMessageDialog(null, "Saliendo del programa");
                 break;
             }
 
@@ -47,8 +47,8 @@ public class empleado {
             }
 
             double salarioFinal = salarioActual - descuento + bonificacion;
-            JOptionPane.showMessageDialog(null, "Su Bonificacion por categoria es: $" + bonificacion +
-                    "\nSu descuento es de: $" + descuento + "\nUsted recibira: $" + salarioFinal);
+            JOptionPane.showMessageDialog(null, "Su Bonificacion por categoria es: $" +bonificacion+
+                    "\nSu descuento es de: $" +descuento+ "\nUsted recibira: $" + salarioFinal);
 
         } while (true);
 
